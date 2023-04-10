@@ -30,3 +30,10 @@ void RandomDataSet(int* target, int length,unsigned int seed, int minnum, int ma
 	}
 	return;
 }
+
+int RandomNum(int min, int max, int seed)
+{
+	srand(seed);
+	int randomnum = (rand() % (max - min + 1)) + min;
+	return randomnum;
+}

@@ -24,6 +24,15 @@
     <ClInclude Include="classes.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SortAlgorithms.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SequencedList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleLinkedList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="fucs.cpp">
@@ -33,6 +42,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="classes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SortAlgorithms.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SequencedList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleLinkedList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

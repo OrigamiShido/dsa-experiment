@@ -20,8 +20,7 @@ int main(void)
 	//part 1
 
 	vector<CStu> students;
-	string test = "李华";
-	CStu studentlist[]={ {20232023, test, 24.0, 99.9}, {22022321, "刘刚", 22, 89.9}, { 978145,"张伟",19,88.8 } };
+	CStu studentlist[]={ {20232023, "李华", 24.0, 99.9}, {22022321, "刘刚", 22, 89.9}, {978145,"张伟",19,88.8}};
 	for (const auto& student : studentlist)
 		students.push_back(student);
 	for (int i = 2; i >= 0; i--)

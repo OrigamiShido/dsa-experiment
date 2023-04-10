@@ -9,5 +9,9 @@
 
 // 添加要在此处预编译的标头
 #include "funcs.h"
+#include "classes.h"
+#include "SortAlgorithms.h"
+#include "SequencedList.h"
+#include "SingleLinkedList.h"
 
 #endif //PCH_H

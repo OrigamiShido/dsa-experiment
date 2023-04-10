@@ -129,6 +129,11 @@
   <ItemGroup>
     <ClCompile Include="ex5p5.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dsa\dsa.vcxproj">
+      <Project>{ea96113f-9ae3-4789-a853-9fbff6bee465}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

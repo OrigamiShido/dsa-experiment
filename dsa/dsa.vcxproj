@@ -141,6 +141,8 @@
   <ItemGroup>
     <ClInclude Include="classes.h" />
     <ClInclude Include="funcs.h" />
+    <ClInclude Include="LinkedStack.h" />
+    <ClInclude Include="NoheadSLinkedList.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="SequencedList.h" />
     <ClInclude Include="SequencedStack.h" />
@@ -150,6 +152,8 @@
   <ItemGroup>
     <ClCompile Include="classes.cpp" />
     <ClCompile Include="fucs.cpp" />
+    <ClCompile Include="LinkedStack.cpp" />
+    <ClCompile Include="NoheadSLinkedList.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

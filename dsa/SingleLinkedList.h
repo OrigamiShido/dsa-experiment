@@ -38,7 +38,7 @@ public:
 	Node* through()
 	{
 		Node* p = head;
-		while (p != NULL)
+		while (p->next != NULL)
 		{
 			p = p->next;
 		}
@@ -57,6 +57,11 @@ SingleLinkedList<T>::SingleLinkedList()
 template<typename T>
 T SingleLinkedList<T>::getdata(int position)
 {
+	if (position > length||position<=0)
+	{
+		cout << "³¬³ö·¶Î§£¡" << endl;
+		return;
+	}
 	Node* p = head;
 	for (int i = 0; i < position; i++)
 		p = p->next;
@@ -77,6 +82,11 @@ inline void SingleLinkedList<T>::pushback(T data)
 template<typename T>
 void SingleLinkedList<T>::remove(int position)
 {
+	if (position > length||position<=0)
+	{
+		cout << "³¬³ö·¶Î§£¡" << endl;
+		return;
+	}
 	Node* p = head;
 	for (int i = 0; i < position - 1; i++)
 		p = p->next;
@@ -96,6 +106,16 @@ int SingleLinkedList<T>::size()
 template<typename T>
 void SingleLinkedList<T>::insert(T data, int position)
 {
+	if (position > length)
+	{
+		pushback(data);
+		return;
+	}
+	if (position <= 1)
+	{
+		pushfront(data);
+		return;
+	}
 	Node* p = head;
 	for (int i = 0; i < position - 1; i++)
 		p = p->next;
@@ -127,7 +147,8 @@ void SingleLinkedList<T>::show()
 	for (int i = 0; i < length; i++)
 	{
 		p = p->next;
-		cout<<p->data<<" ";
+		cout << p->data << " ";
+		cout << endl;
 	}
 	cout << endl;
 	return;

@@ -13,5 +13,8 @@
 #include "SortAlgorithms.h"
 #include "SequencedList.h"
 #include "SingleLinkedList.h"
+#include "SequencedStack.h"
+#include "LinkedStack.h"
+#include "NoheadSLinkedList.h"
 
 #endif //PCH_H

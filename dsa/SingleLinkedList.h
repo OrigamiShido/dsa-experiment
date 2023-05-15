@@ -60,7 +60,7 @@ T SingleLinkedList<T>::getdata(int position)
 	if (position > length||position<=0)
 	{
 		cout << "³¬³ö·¶Î§£¡" << endl;
-		return;
+		return head->data;
 	}
 	Node* p = head;
 	for (int i = 0; i < position; i++)

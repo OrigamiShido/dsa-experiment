@@ -42,6 +42,12 @@
     <ClInclude Include="NoheadSLinkedList.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="BTnode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="fucs.cpp">
@@ -69,6 +75,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="NoheadSLinkedList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BTnode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BTree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

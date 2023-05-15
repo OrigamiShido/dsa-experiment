@@ -9,5 +9,7 @@
 #include "SequencedStack.h"
 #include "LinkedStack.h"
 #include "NoheadSLinkedList.h"
+#include "BTnode.h"
+#include "BTree.h"
 
 // 当使用预编译的头时，需要使用此源文件，编译才能成功。

@@ -4,6 +4,8 @@
 
 #include <iostream>
 
+using namespace std;
+
 template<typename T>
 class LinkedStack
 {
@@ -96,7 +98,7 @@ int LinkedStack<T>::getSize()
 template <typename T>
 void LinkedStack<T>::show()
 {
-	cout << "ջͷ--" << ;
+	cout << "ջͷ--" ;
 	Node* p = top->next;
 	while (p->next != NULL)
 	{

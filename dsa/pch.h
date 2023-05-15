@@ -16,5 +16,7 @@
 #include "SequencedStack.h"
 #include "LinkedStack.h"
 #include "NoheadSLinkedList.h"
+#include "BTnode.h"
+#include "BTree.h"
 
 #endif //PCH_H

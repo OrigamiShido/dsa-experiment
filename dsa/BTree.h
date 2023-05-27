@@ -95,9 +95,9 @@ BTree<T> byarray(T* pt, int length, BTree<T> target)
 		return target;
 	}
 	queue <BTnode<T>*> orderline;
-	BTnode<T>** nodelist=new BTnode<T>*[length];
-	for(int i=0;i<length;i++)
-		nodelist[i]=new BTnode<T>(*(p+i));
+	BTnode<T>** nodelist = new BTnode<T>*[length];
+	for (int i = 0; i < length; i++)
+		nodelist[i] = new BTnode<T>(*(p + i));
 	target.setroot(nodelist[0]);
 	orderline.push(target.getroot());
 	count++;
@@ -121,4 +121,59 @@ BTree<T> byarray(T* pt, int length, BTree<T> target)
 		}
 	}
 	return target;
+}
+
+static int idx = 0;
+
+template<typename T>
+void byGlist(T* list, int length, BTree<T>* target);
+
+template<typename T>
+bool isdata(T& data);
+
+template<typename T>
+BTnode<T>* rootbyglist(T* list);
+
+template<typename T>
+void byGlist(T* list, int length, BTree<T>* target)
+{
+	idx = 0;
+	if (length > 0)
+		target->setroot(rootbyglist(list));
+	else
+		target->setroot(nullptr);
+	return;
+}
+
+template<typename T>
+bool isdata(T& data)
+{
+	if (data == '(' || data == ')' || data == '^' || data == ',')
+		return false;
+	else
+		return true;
+}
+
+template<typename T>
+BTnode<T>* rootbyglist(T* list)
+{
+	BTnode<T>* p = nullptr;
+	T data = list[idx];
+	if (isdata(data))
+	{
+		p = new BTnode<T>(data);
+		idx++;
+		data = list[idx];
+		if (data == '(')
+		{
+			idx++;
+			p->setleft(rootbyglist(list));
+			idx++;
+			p->setright(rootbyglist(list));
+			idx++;
+		}
+	}
+	if (data == '^')
+		idx++;
+	return p;
 }

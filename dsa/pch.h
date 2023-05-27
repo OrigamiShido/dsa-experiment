@@ -18,5 +18,7 @@
 #include "NoheadSLinkedList.h"
 #include "BTnode.h"
 #include "BTree.h"
+#include "LinearSearch.h"
+#include "hashlist.h"
 
 #endif //PCH_H

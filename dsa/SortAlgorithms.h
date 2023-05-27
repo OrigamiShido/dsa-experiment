@@ -33,9 +33,9 @@ T* bubblesort(T* target, int length)
 	T temp;
 	for (int i = 0; i < length; i++)
 	{
-		for (int k = 0; k < length - i; k++)
+		for (int k = 0; k < length - i-1; k++)
 		{
-			if (target[k] < target[k+1])
+			if (target[k+1] < target[k])
 			{
 				temp = target[k];
 				target[k] = target[k + 1];

@@ -48,6 +48,12 @@
     <ClInclude Include="BTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="LinearSearch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hashlist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="fucs.cpp">
@@ -81,6 +87,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="BTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearSearch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hashlist.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
